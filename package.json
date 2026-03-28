@@ -1,0 +1,46 @@
+{
+  "name": "agentvault",
+  "version": "1.0.0",
+  "description": "Smart account provisioning for OpenClaw AI agents with secure key distribution, Cedar policy engine, and progressive autonomy on Solana",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/cli.ts",
+    "cli": "ts-node src/cli.ts",
+    "interactive": "ts-node src/cli.ts interactive",
+    "provision": "ts-node src/cli.ts provision",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "solana",
+    "openclaw",
+    "ai-agent",
+    "smart-account",
+    "swig",
+    "cedar",
+    "policy"
+  ],
+  "author": "AgentVault",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^25.5.0",
+    "@types/uuid": "^11.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.2"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.80.0",
+    "@cedar-policy/cedar-wasm": "^4.9.1",
+    "@solana/web3.js": "^1.98.4",
+    "@swig-wallet/classic": "^1.8.2",
+    "@swig-wallet/coder": "^1.8.2",
+    "better-sqlite3": "^12.8.0",
+    "bs58": "^6.0.0",
+    "keytar": "^7.9.0",
+    "shamir-secret-sharing": "^0.0.4",
+    "tweetnacl": "^1.0.3",
+    "uuid": "^13.0.0"
+  }
+}

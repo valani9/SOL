@@ -1,0 +1,25 @@
+{
+  "name": "agentvault",
+  "version": "1.0.0",
+  "description": "Smart account provisioning for OpenClaw agents with secure key distribution, Cedar policy engine, and progressive autonomy on Solana",
+  "author": "AgentVault",
+  "main": "dist/plugin.js",
+  "tools": [
+    "vault_provision",
+    "vault_set_policy",
+    "vault_execute",
+    "vault_status",
+    "vault_approve",
+    "vault_reject",
+    "vault_freeze"
+  ],
+  "hooks": ["before_tool_call"],
+  "requires": {
+    "solana": true,
+    "environment": [
+      "SOLANA_RPC_URL",
+      "ANTHROPIC_API_KEY",
+      "OWNER_PRIVATE_KEY"
+    ]
+  }
+}
